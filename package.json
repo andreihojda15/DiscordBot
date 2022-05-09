@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/index.js"
+    "start": "nodemon ./src/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Hojda Andrei",
   "license": "ISC",
   "dependencies": {
     "@discordjs/builders": "^0.13.0",
@@ -18,6 +18,7 @@
     "dotenv": "^16.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.15.0"
+    "eslint": "^8.15.0",
+    "nodemon": "^2.0.16"
   }
 }
