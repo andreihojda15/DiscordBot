@@ -16,3 +16,4 @@ const rest = new REST({ version: '9' }).setToken(process.env.BOT_TOKEN);
 rest.put(Routes.applicationGuildCommands(process.env.clientID, process.env.guildID), { body: commands })
     .then(() => console.log('Successfully registered app commands.'))
     .catch(console.error);
+
