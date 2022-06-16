@@ -19,8 +19,8 @@ for (const file of commandFiles) {
 }
 
 // when the client is ready, run this code, only once
-client.once('ready', () => {
-    console.log('ready!');
+client.once('ready', c => {
+    console.log(`Ready! Logged in as ${c.user.tag}`);
 });
 
 client.on('interactionCreate', async interaction => {
